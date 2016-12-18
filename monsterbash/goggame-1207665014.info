@@ -1,0 +1,30 @@
+
+{
+    "gameId" : "1207665014",
+    "rootGameId" : "1207665014",
+    "dependencyGameId" : "",
+    "language"         : "english",
+    "workingDir"       : "Dosbox",
+    "name"             : "Monster Bash",
+    "playTasks"        : [
+        {
+            "isPrimary" : true,
+            "type"      : "FileTask",
+            "path"      : "DOSBOX\\dosbox.exe",
+            "arguments" : "-conf \"..\\dosbox_mbash.conf\" -conf \"..\\dosbox_mbash_single.conf\" -noconsole -c \"exit\""
+        },
+        {
+            "name" : "Graphic Mode Setup",
+            "type" : "FileTask",
+            "path" : "DOSBOX\\GOGDOSConfig.exe",
+            "arguments" : "1207665014"
+        }
+    ],
+    "supportTasks"     : [
+        {
+            "name" : "Support",
+            "type" : "URLTask",
+            "link" : "http://www.gog.com/en/support/monster_bash"
+        }
+    ]
+}
